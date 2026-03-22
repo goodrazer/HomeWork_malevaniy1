@@ -10,14 +10,14 @@ public class Task_1 {
         Scanner scanner = new Scanner(System.in);
         int sizeArrays = scanner.nextInt();
         Random random = new Random();
-        int [] ArraysInt = new int [sizeArrays];
-           for (int i = 0; i < ArraysInt.length; i++) {
-              ArraysInt[i] = random.nextInt(100);
+        int [] arraysInt = new int [sizeArrays];
+           for (int i = 0; i < arraysInt.length; i++) {
+               arraysInt[i] = random.nextInt(100);
            }
-        System.out.println(Arrays.toString(ArraysInt));
+        System.out.println(Arrays.toString(arraysInt));
         System.out.println("Вывожу элементы массива в обратном порядке:");
-           for (int i = ArraysInt.length - 1; i >= 0; i--) {
-              System.out.print(ArraysInt[i] + " ");
+           for (int i = arraysInt.length - 1; i >= 0; i--) {
+              System.out.print(arraysInt[i] + " ");
         }
     }
 }

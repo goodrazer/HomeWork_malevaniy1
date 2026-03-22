@@ -10,20 +10,20 @@ public class Task_2 {
         Scanner scanner = new Scanner(System.in);
         int sizeArrays = scanner.nextInt();
         Random random = new Random();
-        int [] ArraysInt = new int [sizeArrays];
-        for (int i = 0; i < ArraysInt.length; i++) {
-            ArraysInt[i] = random.nextInt(100);
+        int [] arraysInt = new int [sizeArrays];
+        for (int i = 0; i < arraysInt.length; i++) {
+            arraysInt[i] = random.nextInt(100);
         }
-        System.out.println(Arrays.toString(ArraysInt));
-        int minNumbersInArrays = ArraysInt[0];
-        int maxNumbersInArrays = ArraysInt[0];
+        System.out.println(Arrays.toString(arraysInt));
+        int minNumbersInArrays = arraysInt[0];
+        int maxNumbersInArrays = arraysInt[0];
 
-        for (int i = 0; i < ArraysInt.length; i++) {
-            if (ArraysInt[i] < minNumbersInArrays) {
-                minNumbersInArrays = ArraysInt[i];
+        for (int i = 0; i < arraysInt.length; i++) {
+            if (arraysInt[i] < minNumbersInArrays) {
+                minNumbersInArrays = arraysInt[i];
             }
-            if (ArraysInt[i] > maxNumbersInArrays) {
-                maxNumbersInArrays = ArraysInt[i];
+            if (arraysInt[i] > maxNumbersInArrays) {
+                maxNumbersInArrays = arraysInt[i];
             }
         }
         System.out.println("Минимальное значение массива: " + minNumbersInArrays);

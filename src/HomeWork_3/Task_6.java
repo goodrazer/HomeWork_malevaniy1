@@ -10,21 +10,17 @@ public class Task_6 {
         Scanner scanner = new Scanner(System.in);
         int sizeArrays = scanner.nextInt();
         Random random = new Random();
-        int [] ArraysInt = new int [sizeArrays];
-        for (int i = 0; i < ArraysInt.length; i++) {
-            ArraysInt[i] = random.nextInt(100);
+        int [] arraysInt = new int [sizeArrays];
+        for (int i = 0; i < arraysInt.length; i++) {
+            arraysInt[i] = random.nextInt(100);
         }
-        System.out.println(Arrays.toString(ArraysInt));
+        System.out.println(Arrays.toString(arraysInt));
         boolean comparison = true;
-
-        // Начинаем с 1, чтобы сравнить с 0-м элементом
-        for (int i = 1; i < ArraysInt.length; i++) {
-            if (ArraysInt[i] <= ArraysInt[i - 1]) {
+        for (int i = 1; i < arraysInt.length; i++) {
+            if (arraysInt[i] <= arraysInt[i - 1]) {
                 comparison = false;
-                break; // Выходим, если нашли нарушение
             }
         }
-
         if (comparison == true){
             System.out.println("Массив возрастающий");
         }
