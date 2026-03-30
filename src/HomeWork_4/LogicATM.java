@@ -43,8 +43,8 @@ public class LogicATM {
         remainingAmount = remainingAmount - temp20 * 20;
         if (remainingAmount == 0) {
             this.banknoteCount100 = banknoteCount100 - temp100;
-            this.banknoteCount50 = banknoteCount100 - temp50;
-            this.banknoteCount20 = banknoteCount100 - temp20;
+            this.banknoteCount50 = banknoteCount50 - temp50;
+            this.banknoteCount20 = banknoteCount20 - temp20;
             System.out.println("Операция: Снятие денежных средств.");
             System.out.println("Статус операции: Успешна!");
             System.out.println("Выдано купюр номиналом:");
