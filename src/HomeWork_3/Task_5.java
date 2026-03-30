@@ -10,16 +10,16 @@ public class Task_5 {
         Scanner scanner = new Scanner(System.in);
         int sizeArrays = scanner.nextInt();
         Random random = new Random();
-        int [] ArraysInt = new int [sizeArrays];
-        for (int i = 0; i < ArraysInt.length; i++) {
-            ArraysInt[i] = random.nextInt(100);
+        int [] arraysInt = new int [sizeArrays];
+        for (int i = 0; i < arraysInt.length; i++) {
+            arraysInt[i] = random.nextInt(100);
         }
-        System.out.println(Arrays.toString(ArraysInt));
-        for (int i = 0; i < ArraysInt.length / 2; i++) {
-            int bufferElements = ArraysInt[i];
-            ArraysInt[i] = ArraysInt[ArraysInt.length - 1 - i];
-            ArraysInt[ArraysInt.length - 1 - i] = bufferElements;
+        System.out.println(Arrays.toString(arraysInt));
+        for (int i = 0; i < arraysInt.length / 2; i++) {
+            int bufferElements = arraysInt[i];
+            arraysInt[i] = arraysInt[arraysInt.length - 1 - i];
+            arraysInt[arraysInt.length - 1 - i] = bufferElements;
         }
-        System.out.println(Arrays.toString(ArraysInt));
+        System.out.println(Arrays.toString(arraysInt));
     }
 }

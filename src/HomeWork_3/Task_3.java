@@ -10,19 +10,19 @@ public class Task_3 {
         Scanner scanner = new Scanner(System.in);
         int sizeArrays = scanner.nextInt();
         Random random = new Random();
-        int [] ArraysInt = new int [sizeArrays];
-           for (int i = 0; i < ArraysInt.length; i++) {
-              ArraysInt[i] = random.nextInt(100);
+        int [] arraysInt = new int [sizeArrays];
+           for (int i = 0; i < arraysInt.length; i++) {
+               arraysInt[i] = random.nextInt(100);
            }
-           System.out.println(Arrays.toString(ArraysInt));
+           System.out.println(Arrays.toString(arraysInt));
         int minIndex = 0;
         int maxIndex = 0;
-           for (int i = 0; i < ArraysInt.length; i++) {
-              if (ArraysInt[i] < ArraysInt[minIndex]) {
+           for (int i = 0; i < arraysInt.length; i++) {
+              if (arraysInt[i] < arraysInt[minIndex]) {
                 minIndex = i;
               }
 
-              if (ArraysInt[i] > ArraysInt[maxIndex]) {
+              if (arraysInt[i] > arraysInt[maxIndex]) {
                 maxIndex = i;
               }
         }
