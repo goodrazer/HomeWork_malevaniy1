@@ -9,11 +9,11 @@ public class Therapist implements Doctor{
     public void assignDoctor(Patient patient) {
         int code = patient.getTreatmentPlan();
         if (code == 1) {
-            patient.setDoctor((Doctor) new Surgeon());
+            patient.setDoctor(new Surgeon());
         } else if (code == 2) {
-            patient.setDoctor((Doctor) new Dentist());
+            patient.setDoctor(new Dentist());
         } else {
-            patient.setDoctor((Doctor) new Therapist());
+            patient.setDoctor(new Therapist());
         }
         System.out.print("Пациенту назначен специалист: ");
         patient.getDoctor().treat();

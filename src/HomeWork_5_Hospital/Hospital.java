@@ -15,10 +15,10 @@ public class Hospital {
        System.out.println();
        System.out.print("Ваш код: ");
            Scanner scanner = new Scanner(System.in);
-              Therapist Therapist = new Therapist();
+              Therapist therapist = new Therapist();
               int code = scanner.nextInt();
               Patient patient = new Patient(code);
-              Therapist.assignDoctor(patient);
+              therapist.assignDoctor(patient);
            scanner.close();
     }
 }
